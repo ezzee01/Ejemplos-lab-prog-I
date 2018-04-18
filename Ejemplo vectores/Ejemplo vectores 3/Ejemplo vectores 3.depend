@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1523318883 source:c:\users\alumno\desktop\programacion\ejemplo vectores\ejemplo vectores 3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1523927301 source:c:\users\alumno\desktop\nueva carpeta\ejemplo matrices 3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+

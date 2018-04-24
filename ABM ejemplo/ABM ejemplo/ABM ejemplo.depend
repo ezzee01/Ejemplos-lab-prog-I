@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1524522340 source:c:\users\alumno\desktop\abm ejemplo\abm ejemplo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+

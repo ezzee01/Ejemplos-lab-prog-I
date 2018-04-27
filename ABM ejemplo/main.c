@@ -28,6 +28,7 @@ void altaEmpleado(eEmpleados[], int);
 int buscarLibre(eEmpleados[], int);
 int buscarEmpleado(eEmpleados[], int, int);
 void bajaEmpleado(eEmpleados[], int);
+void modEmpleado(eEmpleados[], int);
 
 int main()
 {
@@ -199,5 +200,10 @@ void bajaEmpleado(eEmpleados vec[], int tamanio)
     {
         printf("El empleado no existe.");
     }
+
+}
+
+void modEmpleado(eEmpleados vec[], int tamanio)
+{
 
 }

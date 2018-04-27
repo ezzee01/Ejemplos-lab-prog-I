@@ -40,8 +40,10 @@ int main()
     {
         switch(menu())
         {
-        case 1:
-        case 2:
+        case 1: altaEmpleado(empleado, TAM);
+        break;
+        case 2:bajaEmpleado(empleado, TAM);
+        break;
         case 3:
         case 4:
         case 5:
@@ -158,7 +160,7 @@ int buscarEmpleado(eEmpleados vec[], int tamanio, int legajo)
     }
 }
 
-void bajaEmpleado(eEmpleados vec[], int tam)
+void bajaEmpleado(eEmpleados vec[], int tamanio)
 {
     int lugar;
     int esta;
@@ -177,7 +179,7 @@ void bajaEmpleado(eEmpleados vec[], int tam)
         printf("Confirma la baja?(S/N): ");
         scanf("%c", &confirm);
         confirm = tolower(confirm);
-        while(confirm != 's' || confirm != 'n')
+        while(confirm != 's' && confirm != 'n')
         {
             printf("Error. Reingrese: ");
             scanf("%c", &confirm);

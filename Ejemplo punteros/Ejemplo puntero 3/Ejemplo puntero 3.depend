@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1526689920 source:c:\users\alumno\desktop\ejemplos-lab-prog-i\ejemplo punteros\ejemplo puntero 3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

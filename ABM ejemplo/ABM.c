@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <ctype.h>
+#include <string.h>
 #include "ABM.h"
 
 //MENU--------------------------------------------------------------------------
@@ -23,7 +24,7 @@ int menu()
     printf("Opcion: ");
     scanf("%d", &opcion);
 
-    while(opcion < 1 || opcion > 6)
+    while(opcion < 1 || opcion > 8)
     {
         printf("Error. Reingrese: ");
         scanf("%d", &opcion);
@@ -85,7 +86,13 @@ void altaEmpleado(eEmpleados vec[], int tamanio)
             }
 
             printf("Ingrese fecha de ingreso: ");
-            scanf("%d %d %d", &auxEmpleado.fechaIngreso.dia, &auxEmpleado.fechaIngreso.mes, &auxEmpleado.fechaIngreso.anio);
+            //scanf("%d%d%d", &auxEmpleado.fechaIngreso.dia, &auxEmpleado.fechaIngreso.mes, &auxEmpleado.fechaIngreso.anio);
+            scanf("%s", &auxEmpleado.fechaIngreso.dia);
+            printf("\\");
+            scanf("%s", &auxEmpleado.fechaIngreso.mes);
+            printf("\\");
+            scanf("%s", &auxEmpleado.fechaIngreso.anio);
+
 
             printf("Ingrese sueldo: ");
             scanf("%f", &auxEmpleado.sueldo);
@@ -242,7 +249,7 @@ void listar(eEmpleados vec[], int tamanio)
     {
         if(vec[i].isEmpty != 1)
         {
-            printf("%4d      %10s    %c       %02d/%02d/%4d        %10.2f\n",vec[i].legajo, vec[i].nombre, vec[i].sexo, vec[i].fechaIngreso.dia, vec[i].fechaIngreso.mes, vec[i].fechaIngreso.anio, vec[i].sueldo);
+            printf("%4d      %10s    %c       %s/%s/%s       %10.2f\n",vec[i].legajo, vec[i].nombre, vec[i].sexo, vec[i].fechaIngreso.dia, vec[i].fechaIngreso.mes, vec[i].fechaIngreso.anio, vec[i].sueldo);
         }
     }
     system("pause");
@@ -254,7 +261,7 @@ void mostrarEmpleado(eEmpleados vec[], int indice)
 {
     system("cls");
     printf("Legajo          Nombre  Sexo    Fecha de Ingreso    Sueldo\n");
-    printf("%4d      %10s    %c       %02d/%02d/%4d        %10.2f\n",vec[indice].legajo, vec[indice].nombre, vec[indice].sexo, vec[indice].fechaIngreso.dia, vec[indice].fechaIngreso.mes, vec[indice].fechaIngreso.anio, vec[indice].sueldo);
+    printf("%4d      %10s    %c       %s/%s/%s        %10.2f\n",vec[indice].legajo, vec[indice].nombre, vec[indice].sexo, vec[indice].fechaIngreso.dia, vec[indice].fechaIngreso.mes, vec[indice].fechaIngreso.anio, vec[indice].sueldo);
     system("pause");
 }
 

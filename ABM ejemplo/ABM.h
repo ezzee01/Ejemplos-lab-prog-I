@@ -1,8 +1,8 @@
 typedef struct
 {
-    int dia;
-    int mes;
-    int anio;
+    char dia[10];
+    char mes[10];
+    char anio[10];
 }eFecha;
 
 typedef struct

@@ -39,18 +39,19 @@ int main()
 
     for(int i=0; i<(al_len(listaEmpleados)); i++)
     {
+        aux =(Employee*) al_get(listaEmpleados, i);
 
+        printf("%d--%s\n", aux->id,aux->name);
     }
 
-    aux = (Employee*) al_get(listaEmpleados,0);
+    printf("ordenado: \n");
 
+    al_sort(listaEmpleados,employee_compare(),1);
 
+    for(int i=0; i<al_len(listaEmpleados);i++)
+    {
 
-
-
-    printf("%d--%s\n", aux->id, aux->name);
-
-    printf("%d", al_len(listaEmpleados));
+    }
 
     return 0;
 }
